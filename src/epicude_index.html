@@ -1,0 +1,716 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Epicube | Serveur Minecraft Mini-Jeux</title><link rel="search" type="application/opensearchdescription+xml" title="Epicube" href="/opensearch.xml" />    <link href="//fonts.googleapis.com/css?family=Lato:100normal,100italic,300normal,300italic,400normal,400italic,700normal,700italic,900normal,900italic" rel="stylesheet" type="text/css">
+        <link href="https://forum.epicube.fr/assets/img/emojione.sprites.css" rel="stylesheet" type="text/css">	<link rel="stylesheet" id="open-sans-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&amp;subset=latin%2Clatin-ext&amp;ver=3.9.2" type="text/css" media="all">
+        <meta name="_csrf" content="4cQ32TRUAY35uiVH">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-49988432-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+        <script src='https://www.smartadserver.com/config.js?nwid=104' type="text/javascript"></script>
+        <script type="text/javascript">
+            sas.setup({domain: 'https://www.smartadserver.com', async: true});
+        </script>
+        <link rel="stylesheet" href="/css/bootstrap.min.css?1452452029"><link rel="stylesheet" href="/css/bootstrap-hacks.css?1466185719"><link rel="stylesheet" href="/css/main.css?1465161124"><link rel="stylesheet" href="/css/font-awesome.min.css?1460478517"><link rel="stylesheet" href="/css/dashicons.css?1440293826"><link rel="stylesheet" href="/css/home.css?1465955443"><link rel="stylesheet" href="/css/format.css?1440293826">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type='text/javascript'>
+            sas.call('onecall', {
+                siteId: 60021, // 
+                pageId: 465395, // Page : epicube/rg
+                formatId: '1391,928,920,19175,922,19176',
+                target: ''			// Ciblage
+            });
+        </script><script src="/js/functions.js?1441813530"></script><script src="/js/autosize.js?1451605075"></script><script src="/js/article.js?1465161125"></script></head>
+
+    <body>
+        <header>
+            <div class="userNavigation">
+                <div class="container">
+                    <div class="logo col-lg-8 col-md-9 col-sm-8 col-xs-12">
+                        <div class="row align-xs-center">
+                            Epicube <span style="font-size: 16px;">Articles</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-4 hidden-xs">
+                        <div class="row">
+                            <div class="server col-lg-8 col-md-12 col-sm-12 hidden-xs pull-right" id="getPlayerCount-1">
+                                <div class="row">
+                                    <div class="serverIP">
+                                        play.epicube.fr								</div>
+                                    <div class="serverInfo">
+                                        <span class="connectedPlayers">5 569</span> joueurs connectés								</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <div class="container">
+                    <div class="col-lg-8 col-md-9 col-sm-8 col-xs-7">
+                        <div class="row">
+                            <div class="navTab navHome col-lg-2 col-md-2 col-sm-3 col-xs-3" id="selected">
+                                <div class="row navContent">
+                                    <a href="//epicube.fr"><img src="/img/icons/home.png" />
+                                        <span class="hidden-xs">Accueil</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="navTab navDevBlog col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                                <div class="row navContent">
+                                    <a href="//epicube.fr/archive/devblog"><img src="/img/icons/clipboard.png" />
+                                        <span class="hidden-xs">Devblog</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="navTab navTV col-lg-2 col-md-2 hidden-sm hidden-xs featured">
+                                <div class="row navContent">
+                                    <a href="//epicube.fr/webtv" data-toggle="tooltip" data-placement="bottom" title="17 viewers">
+                                        <span style="position: relative;"><img style="z-index: 2; position: relative;" src="/img/icons/webtv.png" /><span class="online-pulse"></span></span>
+                                        <span class="hidden-xs">Live</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="navTab navForum col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                                <div class="row navContent">
+                                    <a href="//forum.epicube.fr"><img src="/img/icons/forum.png" />
+                                        <span class="hidden-xs">Forum</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="navTab navStats col-lg-2 col-md-2 col-sm-3 col-xs-3" >
+                                <div class="row navContent">
+                                    <a href="//stats.epicube.fr"><img src="/img/icons/trophy.png" />
+                                        <span class="hidden-xs">Stats</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-4 col-xs-5">
+                        <div class="row">
+                            <div class="navTab navShop col-lg-4 col-md-6 col-sm-6 col-xs-4 pull-right" >
+                                <div class="row navContent">
+                                    <a href="http://shop.epicube.fr"><img src="/img/icons/treasure_chest.png" />
+                                        <span class="hidden-xs">Boutique</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="navTab navPlay col-lg-4 col-md-6 col-sm-6 col-xs-4 pull-right">
+                                <div class="row navContent">
+                                    <a href="//epicube.fr/play"><img src="/img/icons/games_control.png" />
+                                        <span class="hidden-xs"> Jouer</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="customLinks">
+                <div class="container">
+                    <div class="row">
+                        <div class="customLink col-lg-4 col-md-4 hidden-sm hidden-xs"><a href="/play">Découvrir Epicube</a></div><div class="customLink col-lg-4 col-md-4 hidden-sm hidden-xs"><a href="/popular">Comment jouer ?</a></div><div class="customLink col-lg-4 col-md-4 hidden-sm hidden-xs"><a href="/archive">Wiki</a></div>				</div>
+                </div>
+            </div>
+        </header>
+        <div class="home-header hidden-sm hidden-xs">
+            <div id="particles-js">
+                <div class="slider">
+                    <div class="container">
+
+                        <div id="home-carousel" class="carousel slide">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#home-carousel" data-slide-to="0" data-toggle="tooltip" data-placement="top" title="Host" class="active"></li>
+                                <li data-target="#home-carousel" data-slide-to="1" data-toggle="tooltip" data-placement="top" title="Promotions"></li>
+                                <li data-target="#home-carousel" data-slide-to="2" data-toggle="tooltip" data-placement="top" title="VIP Update"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active" id="slide-1">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-5 host">
+                                            <div class="slide-title">Host</div>
+                                            <div class="slide-subtitle blue">Events personnalisés</div>
+                                            <div class="slide-text">Plus besoin d'être EpicMember, tu peux maintenant organiser tes propres events personnalisés ! SheepWars, UHC Scénario, FK... Crée la partie de tes rêves et joues-y avec tes amis ou les autres joueurs d'Epicube !</div>
+                                            <div class="slide-button text-center">
+                                                <a href="https://epicube.fr/article/hosts" class="btn btn-info">Découvrir les hosts</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" id="slide-2">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-lg-offset-6 col-md-5 col-md-offset-7 host">
+                                            <div class="slide-title">Promotions</div>
+                                            <div class="slide-subtitle red">Sur les grades</div>
+                                            <div class="slide-text">-50% sur les grades jusqu'au 30 Juin : 
+                                                <ul>
+                                                    <li>VIP à <b>15€</b></li>
+                                                    <li>VIP+ à <b>25€</b></li>
+                                                    <li>EpicVIP à <b>50€</b></li>
+                                                </ul></div>
+                                            <div class="slide-button text-center">
+                                                <a href="http://shop.epicube.fr/category/678186" class="btn btn-danger">Acheter un grade</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" id="slide-3">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-5 host">
+                                            <div class="slide-title">VIP Update</div>
+                                            <div class="slide-subtitle yellow">Mise à jour des grades</div>
+                                            <div class="slide-text">Epicube est devenu fou, à présent tous les joueurs profitent de 2 semaines de VIP gratuitement. Les grades basculent sur la boutique en ligne et bénéficient de nouveaux avantages.</div>
+                                            <div class="slide-button text-center">
+                                                <a href="https://epicube.fr/article/update-vip" class="btn btn-warning">Lire l'article</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+            $('#home-carousel').carousel({
+                interval: 7000
+            })
+                </script>
+
+                <!--
+                <div class="server-logo">
+                        <div class="container text-center">
+                                <a href="/play">
+                                        <img class="hidden-sm hidden-xs large-logo"src="/img/logo/logo.png">
+                                        <img class="hidden-lg hidden-md small-logo"src="/img/logo/logo.png">
+                                </a>
+                        </div>
+                </div>
+                -->
+
+                <!--
+                <div class="home-stats">
+                        <div class="container">
+                                <div class="row">
+                                        <a href="//stats.epicube.fr" data-toggle="tooltip" data-placement="top" title="Clique pour découvrir plus de statistiques">
+                                                <div class="stat-item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                                        <div class="stat-icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+                                                        <div class="stat-count">916 821</div>
+                                                        <div class="stat-desc">joueurs inscrits</div>
+                                                </div>
+                                                <div class="stat-item col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                                                        <div class="stat-icon"><i class="fa fa-gamepad" aria-hidden="true"></i></i></div>
+                                                        <div class="stat-count">6 804 899</div>
+                                                        <div class="stat-desc">Parties jouées</div>
+                                                </div>
+                                                <div class="stat-item col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                                                        <div class="stat-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                                        <div class="stat-count">28 883</div>
+                                                        <div class="stat-desc">Guildes créées</div>
+                                                </div>
+                                                <div class="stat-item col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                                        <div class="stat-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                                                        <div class="stat-count">5 569</div>
+                                                        <div class="stat-desc">joueurs connectés</div>
+                                                </div>
+                                        </a>
+                                </div>
+                        </div>
+                </div>
+                -->
+            </div>
+        </div>
+
+        <!--
+        <div class="home-server-ip">
+                <div class="container text-center">
+                        <div class="server-ip-box" data-clipboard-text="play.epicube.fr" data-toggle="tooltip" data-placement="top" title="Clique pour copier l'adresse">play.epicube.fr</div>
+                </div>
+        </div>
+        -->
+
+        <div class="news-feed">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="news-item">
+                            <a href="//epicube.fr/article/hosts" data-toggle="tooltip" data-placement="top" title="Plus besoin d'être EpicMember, tu peux maintenant organiser tes propres events personnalisés ! SheepWars, UHC Scénario, FK... Crée la partie de tes rêves et joues-y avec tes amis ou les autres joueurs d'Epicube !">
+                                <div class="news-thumbnail">
+                                    <img src="https://epicube.fr/files/article/9644620-1465659994miniaturehost-1.png">
+                                </div>
+                                <span class="news-date">15  Juin </span>
+                                <span class="news-title">Les Hosts !  </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="news-item">
+                            <a href="//epicube.fr/article/update-vip" data-toggle="tooltip" data-placement="top" title="Grosse mise à jour de nos grades VIP : 2 semaines de VIP offertes à tous et une promotion de 50% au programme. ">
+                                <div class="news-thumbnail">
+                                    <img src="https://epicube.fr/files/article/9518790-pnj.png">
+                                </div>
+                                <span class="news-date">27  Mai </span>
+                                <span class="news-title">Update VIP</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="news-item">
+                            <a href="//epicube.fr/article/buildwar" data-toggle="tooltip" data-placement="top" title="Un concept de jeu bien connu fait son arrivée sur Epicube. Participez aux concours de build avec vos amis si le PvP ne vous passionne pas.">
+                                <div class="news-thumbnail">
+                                    <img src="https://epicube.fr/files/article/1906556-buildwarminia.jpg">
+                                </div>
+                                <span class="news-date">04  Mai </span>
+                                <span class="news-title">[PUBLIC] Nouveau jeu : BuildWar</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="news-item">
+                            <a href="//epicube.fr/article/2-ans-epicube-hub" data-toggle="tooltip" data-placement="top" title="Nouveau hub pour Epicube, à l'occasion de nos deux ans ! Merci à tous pour le soutien depuis tout ce temps :D">
+                                <div class="news-thumbnail">
+                                    <img src="https://epicube.fr/files/article/4120463-hub00.png">
+                                </div>
+                                <span class="news-date">01  Mai </span>
+                                <span class="news-title">2 ans d'Epicube - Nouveau hub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 articles">
+                        <h4 class="page-header">Anciens articles</h4>
+                        <div class="articles-feed">
+
+                            <div class="article media">
+                                <a href="/article/epicubetv-printemps-fight">
+                                    <div class="media-left">
+                                        <img class="media-object size-92 img-rounded" src="https://epicube.fr/files/article/8695192-miniatureepicubetv.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="article-date">01  Mai </div>
+                                        <div class="article-title">EpicubeTV - Printemps du Fight</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="article media">
+                                <a href="/article/redaction-chiffres">
+                                    <div class="media-left">
+                                        <img class="media-object size-92 img-rounded" src="https://epicube.fr/files/article/8387829-ecbinredaction.png">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="article-date">30  Avril </div>
+                                        <div class="article-title">La Rédaction en quelques chiffres</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="article media">
+                                <a href="/article/table-ronde-redaction">
+                                    <div class="media-left">
+                                        <img class="media-object size-92 img-rounded" src="https://epicube.fr/files/article/5335679-1461687295ectabronempixxtomus700400.png">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="article-date">26  Avril </div>
+                                        <div class="article-title">Table ronde de la Rédaction</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="article media">
+                                <a href="/article/reforme-redaction-epicube">
+                                    <div class="media-left">
+                                        <img class="media-object size-92 img-rounded" src="https://epicube.fr/files/article/3880812-annonce-reforme-aux-joueurs.png">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="article-date">25  Avril </div>
+                                        <div class="article-title">Réforme de la Rédaction d'Epicube</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="article media">
+                                <a href="/article/team-fortress">
+                                    <div class="media-left">
+                                        <img class="media-object size-92 img-rounded" src="https://epicube.fr/files/article/4775390-teamfortress.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="article-date">20  Avril </div>
+                                        <div class="article-title">[PUBLIC] Nouveau jeu : Team Fortress</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="more-link text-center">
+                            <a href="/archive/article">Voir tous les articles</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 devblog">
+                        <h4 class="page-header">Devblog</h4>
+                        <div class="devpost-feed">
+                            <div class="devpost">
+                                <a href="/devblog/host-desactivation-stream-kick-ban">
+                                    <div class="devpost-date text-center">
+                                        <div class="devpost-date-day">21</div>
+                                        <div class="devpost-date-month"> Juin </div>
+                                    </div>
+                                    <div class="devpost-content">
+                                        <div class="devpost-game">Host</div>
+                                        <div class="devpost-title">[Host] Désactivation stream kick/ban</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="devpost">
+                                <a href="/devblog/thetowers-bienvenue">
+                                    <div class="devpost-date text-center">
+                                        <div class="devpost-date-day">21</div>
+                                        <div class="devpost-date-month"> Juin </div>
+                                    </div>
+                                    <div class="devpost-content">
+                                        <div class="devpost-game">The Tower</div>
+                                        <div class="devpost-title">[TheTowers] - Bienvenue</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="devpost">
+                                <a href="/devblog/host-restriction-des-hubcasts">
+                                    <div class="devpost-date text-center">
+                                        <div class="devpost-date-day">21</div>
+                                        <div class="devpost-date-month"> Juin </div>
+                                    </div>
+                                    <div class="devpost-content">
+                                        <div class="devpost-game">Host</div>
+                                        <div class="devpost-title">[Host] Restriction des hubcasts</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="devpost">
+                                <a href="/devblog/rename-de-team-bugs">
+                                    <div class="devpost-date text-center">
+                                        <div class="devpost-date-day">18</div>
+                                        <div class="devpost-date-month"> Juin </div>
+                                    </div>
+                                    <div class="devpost-content">
+                                        <div class="devpost-game">Rush</div>
+                                        <div class="devpost-title">Rename de team, bugs</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="devpost">
+                                <a href="/devblog/uhc-scenarios-options">
+                                    <div class="devpost-date text-center">
+                                        <div class="devpost-date-day">18</div>
+                                        <div class="devpost-date-month"> Juin </div>
+                                    </div>
+                                    <div class="devpost-content">
+                                        <div class="devpost-game">UHC</div>
+                                        <div class="devpost-title">[FR/EN/ES] UHC (scénarios, options, ...)</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="more-link text-center">
+                            <a href="/archive/devblog">Voir tous les devblogs</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 wiki">
+                        <h4 class="page-header">Wiki du serveur</h4>
+                        <div class="wiki-feed">
+                            <div class="wiki-item">
+                                <a href="/wiki/guilds">
+                                    <div class="wiki-title">Les Guildes</div>
+                                    <div class="wiki-meta">Dernière édition le 17  Juin </div>
+                                    <div class="wiki-meta">1633 vues</div>
+                                </a>
+                            </div>
+                            <div class="wiki-item">
+                                <a href="/wiki/host">
+                                    <div class="wiki-title">Host</div>
+                                    <div class="wiki-meta">Dernière édition le 16  Juin </div>
+                                    <div class="wiki-meta">5482 vues</div>
+                                </a>
+                            </div>
+                            <div class="wiki-item">
+                                <a href="/wiki/rules">
+                                    <div class="wiki-title">Règlement du serveur</div>
+                                    <div class="wiki-meta">Dernière édition le 14  Juin </div>
+                                    <div class="wiki-meta">3823 vues</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-networks">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 social-item">
+                        <a href="https://www.youtube.com/c/EpicubeOfficiel?sub_confirmation=1">
+                            <img class="img-rounded" src="/img/icons/32-youtube.png"> 10 697 abonnés
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 social-item">
+                        <a href="https://twitter.com/Epicube_Fr">
+                            <img class="img-rounded" src="/img/icons/32-twitter.png"> 69 358 abonnés
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 social-item">
+                        <a href="https://www.facebook.com/epicube/">
+                            <img class="img-rounded" src="/img/icons/32-facebook.png"> 18 698 abonnés
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs social-item">
+                        <a href="https://epicube.fr/webtv">
+                            <img class="img-rounded" src="/img/icons/32-epicubetv.png"> 17 viewers
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="webtv hidden-sm hidden-xs">
+            <div class="container">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="webtv-desc">
+                        <div class="webtv-img text-center">
+                            <a href="/webtv">
+                                <img src="/img/webtv/epicubetv_logo_grey.png">
+                            </a>
+                        </div>
+                        <h4 class="page-header">Liens utiles</h4>
+                        <div class="row webtv-links">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="webtv-link">
+                                    <a href="https://twitter.com/EpicubeTV" target"_blank">
+                                       <i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter EpicubeTV
+                                    </a>
+                                </div>
+                                <div class="webtv-link">
+                                    <a href="https://www.twitch.tv/epicubetv" target"_blank">
+                                       <i class="fa fa-twitch" aria-hidden="true"></i> Chaîne Twitch
+                                    </a>
+                                </div>
+                                <div class="webtv-link">
+                                    <a href="https://www.youtube.com/c/EpicubeOfficiel?sub_confirmation=1" target"_blank">
+                                       <i class="fa fa-youtube-play" aria-hidden="true"></i> Chaîne Youtube
+                                    </a>
+                                </div>
+                                <div class="webtv-link">
+                                    <a href="https://www.facebook.com/epicubetv" target"_blank">
+                                       <i class="fa fa-facebook-official" aria-hidden="true"></i> Page Facebook
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="webtv-link">
+                                    <a href="/webtv">
+                                        <i class="fa fa-link" aria-hidden="true"></i> Lien de la WebTV
+                                    </a>
+                                </div>
+                                <div class="webtv-link">
+                                    <a href="/webtv/planning">
+                                        <i class="fa fa-link" aria-hidden="true"></i> Planning de la semaine
+                                    </a>
+                                </div>
+                                <div class="webtv-link">
+                                    <a href="/article/epicubetv-printemps-fight">
+                                        <i class="fa fa-question-circle" aria-hidden="true"></i> Présentation de la TV
+                                    </a>
+                                </div>
+                                <div class="webtv-link">
+                                    <a href="https://www.youtube.com/watch?v=puj9O2R-jck">
+                                        <i class="fa fa-youtube-play" aria-hidden="true"></i> Présentation en vidéo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 hidden-sm hidden-xs text-center">
+                    <div class="carousel-container">
+                        <div id="carousel-epicubetv" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-epicubetv" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-epicubetv" data-slide-to="1"></li>
+                                <li data-target="#carousel-epicubetv" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <a href="/webtv">
+                                        <img src="/img/webtv/screen_1.jpg">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="/webtv">
+                                        <img src="/img/webtv/screen_2.jpg">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="/webtv">
+                                        <img src="/img/webtv/screen_3.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/dependances/clipboard.min.js"></script>
+        <script type="text/javascript">
+
+            var clipboard = new Clipboard('.server-ip-box');
+
+            clipboard.on('success', function (e) {
+                console.log(e);
+                $('.server-ip-box').attr('data-original-title', 'Copié !');
+                $('.server-ip-box').attr('data-original-title', 'Copié !').tooltip('show');
+                $('.server-ip-box').attr('data-original-title', 'Clique pour copier l\'adresse');
+            });
+            clipboard.on('error', function (e) {
+                console.log(e);
+            });
+
+            /*
+             particlesJS("particles-js", {"particles":{"number":{"value":20,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"image","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"/img/logo/home_icon.png","width":"10px","height":"10px"}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":30,"random":false,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":false,"mode":"remove"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});*/
+
+            particlesJS("particles-js", {"particles": {"number": {"value": 50, "density": {"enable": true, "value_area": 800}}, "color": {"value": "#fff"}, "shape": {"type": "circle", "stroke": {"width": 0, "color": "#000000"}, "polygon": {"nb_sides": 5}, "image": {"src": "img/github.svg", "width": 100, "height": 100}}, "opacity": {"value": 0.5, "random": true, "anim": {"enable": false, "speed": 1, "opacity_min": 0.1, "sync": false}}, "size": {"value": 3, "random": false, "anim": {"enable": false, "speed": 40, "size_min": 0.1, "sync": false}}, "line_linked": {"enable": false, "distance": 500, "color": "#ffffff", "opacity": 0.4, "width": 2}, "move": {"enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": true, "attract": {"enable": false, "rotateX": 600, "rotateY": 1200}}}, "interactivity": {"detect_on": "canvas", "events": {"onhover": {"enable": false, "mode": "bubble"}, "onclick": {"enable": false, "mode": "repulse"}, "resize": false}, "modes": {"grab": {"distance": 400, "line_linked": {"opacity": 0.5}}, "bubble": {"distance": 400, "size": 4, "duration": 0.3, "opacity": 1, "speed": 3}, "repulse": {"distance": 200, "duration": 0.4}, "push": {"particles_nb": 4}, "remove": {"particles_nb": 2}}}, "retina_detect": true});
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+
+        <footer>
+            <div class="container">
+                <div class="row" id="epicube">
+                    <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 align-xs-center">
+                        <img src="/img/ressources/epicube_small.png" />
+                    </div>
+                    <div class="col-lg-5 col-lg-offset-4 col-md-7 col-md-offset-1 col-sm-7 hidden-xs">
+                        <div class="col-lg-6 col-md-6 col-sm-6 align-right">
+                            <div class="row">
+                                <span class="connectedPlayers">5 569</span> joueurs connectés						</div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 align-right">
+                            <div class="row">
+                                <span class="registredPlayers">916 821</span> joueurs inscrits						</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <hr>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer_ad" style="text-align: center;">
+                        <script type="text/javascript">
+                            sas.render('19175');  // Format : Megaban_Bas 728x90
+                        </script>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-6 hidden-md col-sm-6 hidden-xs footerColumn" id="column-1">
+                                <div class="footerTitle">
+                                    Contact &
+                                    <p>Reseaux sociaux</p>
+                                </div>
+                                <div class="socials"><a href="https://twitter.com/Epicube_Fr"><i class="fa fa-chevron-right"></i><b>Follow</b> nous sur Twitter</a></div>
+                                <div class="socials"><a href="https://facebook.com/epicube"><i class="fa fa-chevron-right"></i><b>Like</b> nous sur Facebook</a></div>
+                                <div class="socials"><a href="mailto://contact@epicube.fr"><i class="fa fa-chevron-right"></i><b>Envoie</b> nous un mail</a></div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 footerColumn" id="column-2">
+                                <div class="footerTitle">
+                                    Aide &
+                                    <p>Informations</p>
+                                </div>
+                                <p class="footerDescription">Epicube est un serveur Minecraft de Mini-Jeux non affilié à Mojang. Ouvert depuis le 1er Mai 2014 et maintenu par des passionnés, notre objectif est de proposer du contenu innovant et de qualité.</p>
+                                <div class="legals"><a href="//forum.epicube.fr/help/terms"><i class="fa fa-chevron-right"></i>Conditions générales d'utilisation</a></div>
+                                <div class="legals"><a href="//forum.epicube.fr/pages/legals/"><i class="fa fa-chevron-right"></i>Mentions Légales</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-7 hidden-sm hidden-xs footerColumn" id="column-3">
+                        <div class="row-left">
+                            <div class="footerTitle">
+                                Liens							<p>A ne pas manquer</p>
+                            </div>
+                            <div class="featuredLink">
+                                <a href="//stats.epicube.fr"><img src="/img/icons/trophy.png" />
+                                    <p>Découvre les <b>statistiques</b> détaillées de tes amis et des joueurs que tu préfères. Tu pourras aussi y trouver quelques statistiques intéressantes sur le serveur.</p></a>
+                            </div>
+                            <div class="featuredLink">
+                                <a href="//epicube.fr/play"><img src="/img/icons/help.png" />
+                                    <p>Tu ne connais pas encore notre serveur ? Viens découvrir <b>Epicube</b> en suivant ce lien, et profite des anecdotes et leaderboards pour chacun de nos jeux !</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>(function (w, d, s, l, i) {
+                w[l] = w[l] || [];w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+                var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-NRZBQ4');</script>
+    </body>
+</html>

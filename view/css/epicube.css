@@ -1,0 +1,630 @@
+/*
+ * Theme : Epicube 
+ * Author : @Chekaviah
+ * Link : http://twitter.com/Chekaviah
+ * All Rights Reserved
+ */
+
+/*
+ * 1. MAIN
+ */
+
+body, div {
+    font-family: "Open Sans", "Arial", sans-serif;
+    outline: none;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+body {
+    background-color: #FFF;
+}
+
+.online-pulse {
+    border: 10px solid rgb(32, 102, 104);
+    background: transparent;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -khtml-border-radius: 40px;
+    border-radius: 40px;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: pulse 3s ease-out infinite;
+    -moz-animation: pulse 3s ease-out infinite;
+    animation: pulse 3s ease-out infinite;
+    position: absolute;
+    top: -15px;
+    left: -11px;
+    z-index: 1;
+    opacity: 0;
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform:scale(0);
+        opacity:0.0
+    } 25% {
+        -moz-transform:scale(0);
+        opacity:0.1
+    } 50% {
+        -moz-transform:scale(0.1);
+        opacity:0.3
+    } 75% {
+        -moz-transform:scale(0.5);
+        opacity:0.9
+    } 100% {
+        -moz-transform:scale(1);
+        opacity:0.0
+    }
+}
+
+@-webkit-keyframes "pulse" {
+    0% {
+        -webkit-transform:scale(0);
+        opacity:0.9
+    } 25% {
+        -webkit-transform:scale(0);
+        opacity:0.9
+    } 50% {
+        -webkit-transform:scale(0.1);
+        opacity:0.9
+    } 90% {
+        -webkit-transform:scale(0.5);
+        opacity:0.9
+    } 100% {
+        -webkit-transform:scale(1);
+        opacity:0.0
+    }
+}
+
+
+/* MOJANG */
+
+.minecraft-background-0 {
+    background-color: #000000;
+    border-color: #FFF;
+}
+
+.minecraft-background-1 {
+    background-color: #000077;
+    border-color: #FFF;
+}
+
+.minecraft-background-2 {
+    background-color: #007700;
+    border-color: #FFF;
+}
+
+.minecraft-background-3 {
+    background-color: #007777;
+    border-color: #005656;
+}
+
+.minecraft-background-4 {
+    background-color: #AA0000;
+    border-color: #FFF;
+}
+
+.minecraft-background-5 {
+    background-color: #AA00AA;
+    border-color: #FFF;
+}
+
+.minecraft-background-6 {
+    background-color: #E59900;
+    border-color: #CB8800;
+}
+
+.minecraft-background-7 {
+    background-color: #AAAAAA;
+    border-color: #949494;
+}
+
+.minecraft-background-8 {
+    background-color: #555555;
+    border-color: #FFF;
+}
+
+.minecraft-background-9 {
+    background-color: #555FFF;
+    border-color: #FFF;
+}
+
+.minecraft-background-a {
+    background-color: #62BB62;
+    border-color: #4F944F;
+}
+
+.minecraft-background-b {
+    background-color: #24B6B6;
+    border-color: #FFF;
+}
+
+.minecraft-background-c {
+    background-color: #C02626;
+    border-color: #7B2424;
+}
+
+.minecraft-background-d {
+    background-color: #FF55FF;
+    border-color: #CD40CD;
+}
+
+.minecraft-background-e {
+    background-color: #DFCC0A;
+    border-color: #B5B502;
+}
+
+.minecraft-background-f {
+    background-color: #E8E8E8;
+    border-color: #D7D7D7;
+}
+
+.minecraft-color-0 {
+    color: #000000;
+}
+
+.minecraft-color-1 {
+    color: #000077;
+}
+
+.minecraft-color-2 {
+    color: #007700;
+}
+
+.minecraft-color-3 {
+    color: #007777;
+}
+
+.minecraft-color-4 {
+    color: #AA0000;
+}
+
+.minecraft-color-5 {
+    color: #AA00AA;
+}
+
+.minecraft-color-6 {
+    color: #E59900;
+}
+
+.minecraft-color-7 {
+    color: #AAAAAA;
+}
+
+.minecraft-color-8 {
+    color: #555555;
+}
+
+.minecraft-color-9 {
+    color: #5555FF;
+}
+
+.minecraft-color-a {
+    color: #62BB62;
+}
+
+.minecraft-color-b {
+    color: #24B6B6;
+}
+
+.minecraft-color-c {
+    color: #C02626;
+}
+
+.minecraft-color-d {
+    color: #FF55FF;
+}
+
+.minecraft-color-e {
+    color: #DFCC0A;
+}
+
+.minecraft-color-f {
+    color: #777;
+}
+
+.minecraft-color-l {
+    font-weight: bold;
+}
+
+.minecraft-color-o {
+    font-style: italic;
+}
+
+.minecraft-color-n {
+    text-decoration: underline;
+}
+
+.minecraft-color-m {
+    text-decoration: line-through;
+}
+
+.minecraft-color-k {
+    text-decoration: blink;
+}
+
+/**
+ * 2.1 FOOTER
+ */
+
+footer {
+    background-color: #333;
+    color: #EEE;
+    margin-top: 48px;
+    margin-bottom: -48px;
+}
+
+footer #epicube {
+    padding: 10px 0;
+    font-size: 17px;
+    color: #818181;
+    line-height: 47px;
+}
+
+footer #epicube span {
+    color: #eee;
+    font-weight: bold;
+}
+
+footer hr {
+    border: none;
+    margin: 6px 0;
+    height: 1px;
+    background-color: #424242;
+}
+
+.footer_ad {
+    overflow: hidden;
+}
+
+/*
+.footerRow {
+	padding: 10px 0;
+	width: 100%;
+	display: inline-block;
+}
+
+.footerRow#epicube img {
+	float: left;
+}
+
+.footerRow#epicube p {
+	float: right;
+	font-size: 17px;
+	color: #818181;
+	line-height: 47px;
+	margin-left: 30px;
+}
+
+.footerRow#epicube p span {
+	color: #eee;
+}
+*/
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: #424242;
+}
+
+.footerColumn {
+    margin-bottom: 15px;
+}
+
+.footerDescription {
+    color: #eee;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.footerTitle {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7E7E7E;
+}
+
+.footerTitle p {
+    font-size: 25px;
+    margin-top: -7px;
+    color: #B6B6B6;
+    /*text-shadow: 1px 0px 0px rgba(79, 79, 79, 0.55);*/
+    transform: scaleY(1.2);
+}
+
+.featuredLink {
+    display: inline-block;
+    margin: 0 -5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.featuredLink:hover {
+    background-color: #232323;
+}
+
+.featuredLink a {
+    text-decoration: none;
+}
+
+.featuredLink img {
+    float: left;
+    margin: 3px 0;
+}
+
+.featuredLink p {
+    padding-top: 5px;
+    padding-left: 70px;
+    color: #eee;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.legals, .socials {
+    margin-top: 10px;
+}
+
+.legals a, .socials a {
+    color: #eee;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.legals a i, .socials a i {
+    margin-right: 10px;
+}
+
+/*
+ * 2.2 HEADER
+ */
+
+.header {
+}
+
+.userNavigation {
+    height: 48px;
+    background-color: #232323;
+}
+
+.logo {
+    height: 48px;
+    line-height: 44px;
+    color: #FFF;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.login {
+    height: 48px;
+    float: right;
+    line-height: 44px;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.login a {
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+}
+
+.server {
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.serverIP {
+    height: 26px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.serverInfo {
+    height: 22px;
+    color: #fff;
+    line-height: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#getPlayerCount-2 {
+    display: none;
+}
+
+nav {
+    height: 48px;
+    background-color: #333;
+    z-index: 100 !important;
+}
+
+.navBar {
+    display: inline-block;
+}
+
+.navTab {
+    height: 48px;
+    opacity: 0.7;
+}
+
+.navTab.featured {
+    opacity: 1;
+}
+
+.navContent {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.navTab.navShop {
+    background-color: #2A2A2A;
+    opacity: 1;
+}
+
+.navTab.navPlay {
+    opacity: 1;
+}
+
+.navTab.navPlay img {
+    margin-right: 5px;
+}
+
+.navTab:hover, .navTab#selected {
+    opacity: 1;
+    border-bottom: 3px solid #FFF;
+    background-color: #232323;
+    height: 48px;
+}
+
+.navTab#selected:after {
+    content: "";
+    border-left: 6px solid transparent !important;
+    border-right: 6px solid transparent !important;
+    border-bottom: 6px solid #F5F5F5;
+    border-top: none;
+    height: 0;
+    width: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+}
+
+.navTab a {
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+
+.navTab a img {
+    margin-top: -4px;
+    height: 28px;
+    width: 28px;
+}
+
+a.navLink {
+    line-height: 46px;
+    font-size: 15px;
+    padding: 0 8px 2px 6px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navTab.navAccueil#selected, .navTab.navAccueil:hover, .navTab.navAccueil#selected:after {
+    border-color: #992600;
+}
+
+.navTab.navSondage#selected, .navTab.navSondage:hover, .navTab.navSondage#selected:after {
+    border-color: #669900;
+}
+
+.navTab.navForum#selected, .navTab.navForum:hover, .navTab.navForum#selected:after {
+    border-color: #ff00ff;
+}
+
+.navTab.navVoter#selected, .navTab.navVoter:hover, .navTab.navVoter#selected:after {
+    border-color: #b36b00;
+}
+
+.navTab.navBoutique#selected, .navTab.navBoutique:hover, .navTab.navBoutique#selected:after {
+    border-color: #000066;
+}
+
+.navTab.navDiscussion#selected, .navTab.navDiscussion:hover, .navTab.navDiscussion#selected:after {
+    border-color: #00ffff;
+}
+
+.customLinks {
+    height: 48px;
+}
+
+.customLink {
+    height: 48px;
+    line-height: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #AEAEAE;
+    text-shadow: 1px 1px 0px #FFFFFF;
+    font-size: 14px;
+}
+
+.customLinks a {
+    color: #AEAEAE;
+    text-shadow: 1px 1px 0px #FFFFFF;
+    text-decoration: none;
+    display: block;
+}
+
+.customLinks a:hover {
+    color: #6E6E6E;
+}
+
+.shop {
+    background-color: #FFF;
+}
+
+img.mceSmilie,
+img.mceSmilieSprite {
+    vertical-align: text-bottom;
+    margin: 0 1px;
+}
+
+/**
+ *  FAKE HEADER
+ **/
+
+.fakeHeader {
+    height: 200px;
+    background-color: #F0D430;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

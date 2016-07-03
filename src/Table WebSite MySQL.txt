@@ -1,0 +1,113 @@
+account:
+- ID
+- UUID
+- email
+- username
+- password
+- rank
+- level
+- last_connection
+- last_ip
+- first_ip
+- register_date
+
+
+news:
+- ID
+- title
+- under_title
+- post
+- senderID
+- date
+
+
+poll_item:
+- ID
+- title
+- question
+- senderID
+- date
+
+
+poll_data:
+- ID
+- poll_ID
+- proposal
+- selected_count
+
+
+forum_class:
+- ID
+- title
+- under_title
+- unresolved_subject_count
+
+forum_subject:
+- ID
+- CID
+- title
+- under_title
+- status
+- date
+
+forum_post:
+- ID
+- SID
+- post
+- senderID
+- date
+
+
+shop_class:
+- ID
+- name
+- description
+
+shop_item:
+- ID
+- CID
+- name
+- price
+- description
+- rate
+
+
+shop_item_cmd:
+- ID
+- CID
+- IID
+- cmd
+
+
+live_chat_class:
+- ID
+- topic
+- connected
+
+
+live_chat_msg:
+- ID
+- CID
+- msg
+- senderID
+- date
+
+
+IP:
+- ID
+- IP
+- account_count
+- last_connection
+- first_connection
+
+
+
+Web class (menus) : 
+
+Accueil
+Sondage
+News
+Forum
+Voter
+Boutique
+Discution
